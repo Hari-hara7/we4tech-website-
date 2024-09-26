@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+  }
+  
+  .projects-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projects-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #007acc; /* Main color for titles */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Grid Layout for Projects */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  
+  /* Project Card Styles */
+  .project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Project Image */
+  .project-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Project Title and Description */
+  .project-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #007acc;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Tech Stack */
+  .tech-stack {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 5px 0;
+  }
+  
+  /* Project Button */
+  .project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .project-button:hover {
+    background-color: #005f99;
+    transform: translateY(-2px);
+  }
+  
+  /* Video Section */
+  .video-section {
+    margin: 60px 0;
+    text-align: center;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .video-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* Video Embed */
+  .video-embed {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Graphic Design Section */
+  .graphic-design-section {
+    margin-top: 60px;
+  }
+  
+  .graphic-design-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .graphic-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .graphic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Graphic Image */
+  .graphic-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .graphic-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .projects-title {
+      font-size: 2.5rem;
+    }
+  
+    .project-title {
+      font-size: 1.3rem;
+    }
+  
+    .project-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .video-embed {
+      height: 180px;
+    }
+  
+    .graphic-title {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-title {
+      font-size: 2rem;
+    }
+  
+    .project-title {
+      font-size: 1.2rem;
+    }
+  
+    .project-description {
+      font-size: 0.9rem;
+    }
+  
+    .tech-stack {
+      font-size: 0.8rem;
+    }
+  
+    .video-embed {
+      height: 160px;
+    }
+  
+    .graphic-title {
+      font-size: 0.9rem;
+    }
+  }
+  

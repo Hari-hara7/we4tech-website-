@@ -1,0 +1,105 @@
+.contact-container {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f5f5f5; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    color: #007acc; /* Primary color */
+  }
+  
+  .contact-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .contact-item {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-icon {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border: 1px solid #007acc;
+    outline: none; /* Remove default outline */
+  }
+  
+  .submit-button {
+    padding: 15px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #005f99; /* Darker shade on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-description {
+      font-size: 1rem;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+    }
+  
+    .contact-item {
+      margin-bottom: 20px; /* Add space between stacked items */
+    }
+  }
+  

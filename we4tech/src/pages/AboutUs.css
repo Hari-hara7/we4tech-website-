@@ -1,0 +1,126 @@
+.about-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f5f5f5; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007acc; /* Primary color */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Team Section */
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .team-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden; /* Prevent overflow for images */
+    position: relative; /* For animations */
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  /* Team Member Styles */
+  .team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-photo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .team-member-name {
+    font-size: 1.5rem;
+    color: #007acc;
+  }
+  
+  .team-member-role {
+    font-size: 1.1rem;
+    color: #888;
+  }
+  
+  .team-member-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  /* Social Icons */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: #007acc;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #005f99; /* Darker shade on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2.5rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  
+    .team-member-name {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 0.9rem;
+    }
+  
+    .team-member-name {
+      font-size: 1.2rem;
+    }
+  
+    .team-member-description {
+      font-size: 0.8rem;
+    }
+  }
+  
