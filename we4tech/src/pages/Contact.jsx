@@ -51,7 +51,7 @@ const Contact = () => {
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 1, delay: 0.5 }}>
-        We’d love to hear from you! Fill out the form below and we’ll get back to you shortly.
+        We’d love to hear from you! Fill  out the form below and we’ll get back to you shortly.
       </motion.p>
 
       <div className="contact-info">
