@@ -40,7 +40,7 @@ const teamMembers = [
     name: 'Vedant',
     role: 'Graphic Designer',
     description: 'Creative mind behind visual designs and branding strategies.',
-    github: 'https://github.com/vedant',
+    github: 'https://github.com/Vedant10Mahalle',
     linkedin: 'https://www.linkedin.com/in/vedant-mahalle-b217b4290/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BZSINcN5rS3i%2FB8FFRpsrtw%3D%3D',
     photo: vedanth, // Replace with actual path
   },
