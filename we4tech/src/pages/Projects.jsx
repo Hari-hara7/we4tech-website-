@@ -9,6 +9,7 @@ import skillcrafters from '../assets/skillcrafters.png';
 import academicpal20 from '../assets/academicpal2.0.png';
 import portfolio from '../assets/portfolio1.png';
 import portfolio2 from '../assets/portfolio2.png';
+import portfolio3 from '../assets/portfolio3.png';
 import video1 from '../assets/video1.mp4';
 import video2 from '../assets/video2.mp4';
 import video3 from '../assets/video3.mp4';
@@ -62,6 +63,20 @@ const portfolios = [
     description: "Interactive portfolio for students.",
     image: portfolio,
     websiteLink: "https://hari-portfolio-one.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "Freelancer Portfolio",
+    description: "Interactive portfolio for freelancers.",
+    image: portfolio2,
+    websiteLink: "https://topg.dad/",
+    githubLink: "#"
+  },
+  {
+    title: "Student Portfolio",
+    description: "Interactive portfolio for students.",
+    image: portfolio3,
+    websiteLink: "https://685949a9-ab03-46b7-9f97-c7b78717e54d-00-9hp8qud45xhm.worf.replit.dev/",
     githubLink: "#"
   },
   {
