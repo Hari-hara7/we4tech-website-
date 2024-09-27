@@ -102,19 +102,19 @@
   }
 
   .section-title {
-    font-size: 1.5rem; /* Reduced font size for mobile */
+    font-size: 1.5rem;
   }
 
   .project-title {
-    font-size: 1.4rem; /* Reduced font size for mobile */
+    font-size: 1.4rem;
   }
 
   .project-description {
-    font-size: 0.9rem; /* Reduced font size for mobile */
+    font-size: 0.9rem;
   }
 
   .project-link {
-    font-size: 1rem; /* Reduced font size for mobile */
+    font-size: 1rem;
   }
 }
 
@@ -149,15 +149,37 @@
   color: #333;
   transition: color 0.3s ease-in-out;
 }
+
+/* Video Section Wrapper for Video Projects */
 .video-wrapper {
   width: 100%;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
   position: relative;
 }
 
-.video-wrapper iframe {
+.video-wrapper video {
   width: 100%;
   height: 100%;
-  border: none;
+  object-fit: cover;
+}
+
+.video-editing-section .project-card:hover .video-wrapper video {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+/* Responsive for Video Cards */
+@media (max-width: 768px) {
+  .video-wrapper {
+    height: 200px;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
 }
