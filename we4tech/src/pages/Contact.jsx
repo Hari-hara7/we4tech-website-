@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './Contact.css'; // Importing styles
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +20,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('https://formspree.io/f/{YOUR_FORM_ID}', {
+    const response = await fetch('https://usebasin.com/f/6bfedd3896c1', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -51,25 +51,27 @@ const Contact = () => {
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 1, delay: 0.5 }}>
-        We’d love to hear from you! Fill  out the form below and we’ll get back to you shortly.
+        We’d love to hear from you! Fill out the form below, and we’ll get back to you shortly.
       </motion.p>
 
       <div className="contact-info">
-        <div className="contact-item">
+        <motion.div className="contact-item" initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
           <FaMapMarkerAlt className="contact-icon" />
           <h3>Address</h3>
-          <p>Your Address Here</p>
-        </div>
-        <div className="contact-item">
+          <p>Karnataka</p>
+        </motion.div>
+        <motion.div className="contact-item" initial={{ x: 0, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
           <FaEnvelope className="contact-icon" />
           <h3>Email</h3>
           <p>info@we4techagency.com</p>
-        </div>
-        <div className="contact-item">
+        </motion.div>
+        <motion.div className="contact-item" initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.4 }}>
           <FaPhoneAlt className="contact-icon" />
           <h3>Phone</h3>
-          <p>+1 234 567 890</p>
-        </div>
+          <p>7989513675</p>
+          <p>9392984634</p>
+          <p>7989777877</p>
+        </motion.div>
       </div>
 
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -115,6 +117,21 @@ const Contact = () => {
           Send Message
         </motion.button>
       </form>
+
+      <div className="social-media">
+        <h3>Follow Us</h3>
+        <div className="social-icons">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="social-icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="social-icon" />
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="social-icon" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
