@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './Projects.css';
@@ -7,6 +7,14 @@ import globallane from '../assets/Globallane.png';
 import Designgrid from '../assets/designgrid.png';
 import skillcrafters from '../assets/skillcrafters.png';
 import academicpal20 from '../assets/academicpal2.0.png';
+import portfolio from '../assets/portfolio1.png';
+import portfolio2 from '../assets/portfolio2.png';
+import video1 from '../assets/video1.mp4';
+import video2 from '../assets/video2.mp4';
+import video3 from '../assets/video3.mp4';
+import video4 from '../assets/video4.mp4';
+import video5 from '../assets/video5.mp4';
+import video6 from '../assets/video6.mp4';
 
 
 
@@ -52,31 +60,59 @@ const portfolios = [
   {
     title: "Student Portfolio",
     description: "Interactive portfolio for students.",
-    image: "/images/portfolio1.jpg",
-    websiteLink: "https://portfolio-hari-two.vercel.app/",
+    image: portfolio,
+    websiteLink: "https://hari-portfolio-one.vercel.app/",
     githubLink: "#"
   },
   {
     title: "Freelancer Portfolio",
     description: "Interactive portfolio for freelancers.",
-    image: "/images/portfolio2.jpg",
-    websiteLink: "#",
+    image: portfolio2,
+    websiteLink: "https://topg.dad/",
     githubLink: "#"
   }
 ];
 
 const videoEditingProjects = [
   {
-    title: "Video Editing Project 1",
-    description: "Cinematic video editing for travel vlogs.",
-    image: "/images/video1.jpg",
+    title: "Cinematic Travel Vlog",
+    description: "A beautifully edited cinematic video capturing scenic landscapes and travel experiences.",
+    videoLink: video1, // Replace with actual video URL
     websiteLink: "#",
     githubLink: "#"
   },
   {
-    title: "Video Editing Project 2",
-    description: "Music video editing with motion graphics.",
-    image: "/images/video2.jpg",
+    title: "Music Video with Motion Graphics",
+    description: "A creative music video featuring dynamic motion graphics and visual effects.",
+    videoLink: video2, // Replace with actual video URL
+    websiteLink: "#",
+    githubLink: "#"
+  },
+  {
+    title: "Corporate Video Editing",
+    description: "Professional corporate video edited for brand promotion and presentations.",
+    videoLink: video3, // Replace with actual video URL
+    websiteLink: "#",
+    githubLink: "#"
+  },
+  {
+    title: "Event Highlight Reel",
+    description: "Highlights of a large-scale event, edited with transitions and effects.",
+    videoLink: video4, // Replace with actual video URL
+    websiteLink: "#",
+    githubLink: "#"
+  },
+  {
+    title: "Wedding Cinematic Edit",
+    description: "A cinematic edit of a wedding ceremony, capturing emotions and key moments.",
+    videoLink: video5, // Replace with actual video URL
+    websiteLink: "#",
+    githubLink: "#"
+  },
+  {
+    title: "Documentary Short Film",
+    description: "A short documentary film edited with a focus on storytelling and impact.",
+    videoLink:  video6, // Replace with actual video URL
     websiteLink: "#",
     githubLink: "#"
   }
@@ -156,32 +192,43 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Video Editing Projects */}
-      <h1 className="section-title">Video Editing Projects</h1>
-      <div className="projects-grid">
-        {videoEditingProjects.map((videoProject, index) => (
-          <motion.div
-            key={index}
-            className="project-card"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: 'spring', stiffness: 200 }}
-          >
-            <img src={videoProject.image} alt={videoProject.title} className="project-image" />
-            <div className="project-content">
-              <h2 className="project-title">{videoProject.title}</h2>
-              <p className="project-description">{videoProject.description}</p>
-              <div className="project-links">
-                <a href={videoProject.websiteLink} className="project-link" target="_blank" rel="noopener noreferrer">
-                  <FaExternalLinkAlt /> View Project
-                </a>
-                <a href={videoProject.githubLink} className="project-link" target="_blank" rel="noopener noreferrer">
-                  <FaGithub /> GitHub
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        ))}
+     {/* Video Editing Projects */}
+<h1 className="section-title">Video Editing Projects</h1>
+<div className="projects-grid">
+  {videoEditingProjects.map((videoProject, index) => (
+    <motion.div
+      key={index}
+      className="project-card"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: 'spring', stiffness: 200 }}
+    >
+      <div className="video-wrapper">
+        <iframe
+          width="100%"
+          height="200"
+          src={videoProject.videoLink}
+          title={videoProject.title}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
+      <div className="project-content">
+        <h2 className="project-title">{videoProject.title}</h2>
+        <p className="project-description">{videoProject.description}</p>
+        <div className="project-links">
+          <a href={videoProject.websiteLink} className="project-link" target="_blank" rel="noopener noreferrer">
+            <FaExternalLinkAlt /> View Project
+          </a>
+          <a href={videoProject.githubLink} className="project-link" target="_blank" rel="noopener noreferrer">
+            <FaGithub /> GitHub
+          </a>
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</div>
+
 
       {/* Graphic Design Projects */}
       <h1 className="section-title">Graphic Design Projects</h1>
