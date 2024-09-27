@@ -16,6 +16,12 @@ import video3 from '../assets/video3.mp4';
 import video4 from '../assets/video4.mp4';
 import video5 from '../assets/video5.mp4';
 import video6 from '../assets/video6.mp4';
+import graphic1 from '../assets/graphic1.png';
+import graphic2 from '../assets/graphic2.png';
+import graphic3 from '../assets/graphic3.png';
+import graphic4 from '../assets/graphic4.png';
+
+
 
 // Project data for different categories
 const projects = [
@@ -136,14 +142,28 @@ const graphicDesignProjects = [
   {
     title: "Poster Design",
     description: "Creative poster design for an event.",
-    image: "/images/graphic1.jpg",
+    image: graphic1,
     websiteLink: "#",
     githubLink: "#"
   },
   {
     title: "Social Media Graphics",
     description: "Designs for social media campaigns.",
-    image: "/images/graphic2.jpg",
+    image: graphic2,
+    websiteLink: "#",
+    githubLink: "#"
+  },
+  {
+    title: "Poster Design",
+    description: "Creative poster design for an event.",
+    image: graphic3,
+    websiteLink: "#",
+    githubLink: "#"
+  },
+  {
+    title: "Social Media Graphics",
+    description: "Designs for social media campaigns.",
+    image: graphic4,
     websiteLink: "#",
     githubLink: "#"
   }
