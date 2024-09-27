@@ -58,8 +58,8 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; 2024 We4Tech Agency. All Rights Reserved.</p>
         <div className="footer-links">
-          <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/terms">Terms & Conditions</a>
+          <a href="https://www.freeprivacypolicy.com/live/dc6ca816-5691-40d4-94a7-746b4d25c711">Privacy Policy</a>
+          <a href="https://www.freeprivacypolicy.com/live/dc6ca816-5691-40d4-94a7-746b4d25c711">Terms & Conditions</a>
           <a href="/contact">Contact</a>
         </div>
       </div>
