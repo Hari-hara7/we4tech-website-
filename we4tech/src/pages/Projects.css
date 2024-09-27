@@ -100,6 +100,22 @@
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
+  .section-title {
+    font-size: 1.5rem; /* Reduced font size for mobile */
+  }
+
+  .project-title {
+    font-size: 1.4rem; /* Reduced font size for mobile */
+  }
+
+  .project-description {
+    font-size: 0.9rem; /* Reduced font size for mobile */
+  }
+
+  .project-link {
+    font-size: 1rem; /* Reduced font size for mobile */
+  }
 }
 
 /* Video Editing Section */
@@ -133,4 +149,3 @@
   color: #333;
   transition: color 0.3s ease-in-out;
 }
-
