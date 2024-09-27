@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './Projects.css';
-import academicPalImage from '../assets/Academicpal.png';
+import academicPalImage from '../assets/academicpal.png';
 import globallane from '../assets/Globallane.png';
 import Designgrid from '../assets/designgrid.png';
 import skillcrafters from '../assets/skillcrafters.png';
