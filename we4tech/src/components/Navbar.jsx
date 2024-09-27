@@ -19,13 +19,7 @@ const Navbar = () => {
         </div>
 
         {/* Animated sliding text */}
-        <motion.div
-          className="infinity-slide"
-          animate={{ x: [0, -3000] }}
-          transition={{ repeat: Infinity, duration: 15, ease: 'linear' }}
-        >
-          Web development with PWA | SEO | Graphic Design | Video Editing | UI/UX
-        </motion.div>
+      
 
         {/* Navigation links for desktop */}
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
