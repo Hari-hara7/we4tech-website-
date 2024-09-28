@@ -2,21 +2,22 @@
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #f9f9f9;
+  background: #2c2c2c; /* Dark background for the container */
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
   text-align: center;
+  color: #f9f9f9; /* Light text color for better contrast */
 }
 
 .contact-title {
   font-size: 2.5rem;
-  color: #333;
+  color: #FFD700; /* Yellow color for the title */
   margin-bottom: 0.5rem;
 }
 
 .contact-description {
   font-size: 1.2rem;
-  color: #555;
+  color: #e0e0e0; /* Lighter gray for description */
   margin-bottom: 2rem;
 }
 
@@ -30,24 +31,24 @@
   flex: 1;
   margin: 0 1rem;
   padding: 1rem;
-  background: #fff;
+  background: #3a3a3a; /* Slightly lighter dark background for contact items */
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-icon {
   font-size: 2rem;
-  color: #FFD700; /* Yellow color */
+  color: #FFD700; /* Yellow color for icons */
 }
 
 .contact-item h3 {
   margin: 0.5rem 0;
   font-size: 1.5rem;
-  color: #333;
+  color: #FFD700; /* Yellow for item titles */
 }
 
 .contact-item p {
-  color: #777;
+  color: #bbb; /* Lighter gray for item text */
 }
 
 .contact-form {
@@ -56,16 +57,18 @@
   gap: 1rem;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid #666; /* Dark border */
   border-radius: 5px;
   font-size: 1rem;
   transition: border-color 0.3s;
+  background: #3a3a3a; /* Dark background for inputs */
+  color: #f9f9f9; /* Light text color for inputs */
 }
 
-.contact-form input:focus, 
+.contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #FFD700; /* Yellow focus border */
 }
@@ -91,7 +94,7 @@
 
 .social-media h3 {
   margin-bottom: 1rem;
-  color: #333;
+  color: #FFD700; /* Yellow for social media title */
 }
 
 .social-icons {
@@ -102,7 +105,7 @@
 
 .social-icon {
   font-size: 2rem;
-  color: #333;
+  color: #f9f9f9; /* Light color for social icons */
   transition: color 0.3s;
 }
 
