@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import './Services.css';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const servicesData = [
   {
@@ -108,7 +110,7 @@ const Services = () => {
       <div className="cta-container">
         <h2>Ready to take your project to the next level?</h2>
         <p>Contact us today to discuss your requirements and get a free quote!</p>
-        <a href="/contact" className="cta-button">Get Started</a>
+        <a href="we4tech1@gmail.com" className="cta-button">Get Started</a>
       </div>
     </div>
   );
