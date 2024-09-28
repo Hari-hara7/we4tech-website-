@@ -25,13 +25,7 @@ import graphic4 from '../assets/graphic4.png';
 
 // Project data for different categories
 const projects = [
-  {
-    title: "Academic Pal",
-    description: "Provides comprehensive notes for B.Tech students across semesters.",
-    image: academicPalImage,
-    websiteLink: "https://academicpal7.onrender.com/",
-    githubLink: "https://github.com/academicpal"
-  },
+  
   {
     title: "Global Lane",
     description: "A platform for import/export of agricultural products, supporting sustainable trade.",
@@ -52,6 +46,13 @@ const projects = [
     image: skillCrafters,
     websiteLink: "https://skill-crafters.vercel.app/",
     githubLink: "https://github.com/skillcrafters"
+  },
+  {
+    title: "Academic Pal",
+    description: "Provides comprehensive notes for B.Tech students across semesters.",
+    image: academicPalImage,
+    websiteLink: "https://academicpal7.onrender.com/",
+    githubLink: "https://github.com/academicpal"
   },
   {
     title: "Academic Pal 2.0",
