@@ -46,10 +46,10 @@ const Footer = () => {
             <a href="https://www.instagram.com/we4tech_?igsh=MWs5aG5jdWZmc2FhZw==" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/we4_tech?t=LGeWVSWE36YGbQgU7W2yEQ&s=09" target="_blank" rel="noopener noreferrer">
               <FaTwitter />
             </a>
-            <a href="https://www.linkedin.com/company/we4tech/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61566605035360&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
               <FaLinkedinIn />
             </a>
           </div>
