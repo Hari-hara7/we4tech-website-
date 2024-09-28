@@ -1,29 +1,33 @@
+/* Projects Section */
 .projects-section {
   padding: 50px 20px;
-  background-color: #f7f7f7;
+  background-color: #000; /* Black background */
   text-align: center;
 }
 
+/* Section Title */
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #333;
+  color: #f7d200; /* Bright yellow title color */
   position: relative;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
+/* Title Underline */
 .section-title::after {
   content: "";
   position: absolute;
   width: 80px;
   height: 4px;
-  background-color: #f4c842;
+  background-color: #f4c842; /* Bright yellow underline */
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
 }
 
+/* Projects Grid Layout */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -31,20 +35,23 @@
   margin-top: 30px;
 }
 
+/* Project Card */
 .project-card {
-  background-color: #fff;
+  background-color: #1c1c1c; /* Dark background for cards */
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
 }
 
+/* Hover Effect for Project Card */
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(247, 210, 0, 0.4); /* Yellow glow effect */
 }
 
+/* Project Image */
 .project-image {
   width: 100%;
   height: 200px;
@@ -52,28 +59,33 @@
   transition: transform 0.4s ease;
 }
 
+/* Scale Image on Hover */
 .project-card:hover .project-image {
   transform: scale(1.1);
 }
 
+/* Project Content */
 .project-content {
   padding: 20px;
   text-align: left;
 }
 
+/* Project Title */
 .project-title {
   font-size: 1.6rem;
-  color: #333;
+  color: #f7d200; /* Bright yellow title */
   margin-bottom: 10px;
 }
 
+/* Project Description */
 .project-description {
   font-size: 1rem;
-  color: #666;
+  color: #bbb; /* Light gray for better readability */
   margin-bottom: 15px;
   line-height: 1.5;
 }
 
+/* Project Links */
 .project-links {
   display: flex;
   justify-content: space-between;
@@ -81,40 +93,44 @@
   margin-top: 10px;
 }
 
+/* Project Link Style */
 .project-link {
-  color: #f4c842;
+  color: #f4c842; /* Bright yellow links */
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
+/* Hover Effect for Project Link */
 .project-link:hover {
-  color: #333;
+  color: #fff; /* Change link color to white on hover */
 }
 
+/* Project Links Margin */
 .project-links .project-link a {
   margin-right: 15px;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
   }
 
   .section-title {
-    font-size: 1.5rem;
+      font-size: 1.5rem; /* Adjust title size for smaller screens */
   }
 
   .project-title {
-    font-size: 1.4rem;
+      font-size: 1.4rem; /* Adjust project title size */
   }
 
   .project-description {
-    font-size: 0.9rem;
+      font-size: 0.9rem; /* Adjust project description size */
   }
 
   .project-link {
-    font-size: 1rem;
+      font-size: 1rem; /* Adjust project link size */
   }
 }
 
@@ -124,33 +140,36 @@
   padding-top: 50px;
 }
 
+/* Project Card Title Styling */
 .project-card .project-title {
-  font-weight: 700;
+  font-weight: 700; /* Bold title */
   text-transform: capitalize;
 }
 
+/* Project Card Description Styling */
 .project-card .project-description {
   font-weight: 400;
   font-size: 0.95rem;
-  color: #444;
+  color: #bbb; /* Light gray for better readability */
 }
 
 /* Special Effects for Hover and Animation */
 .project-card:hover .project-content {
-  background-color: #f4f4f4;
+  background-color: #2b2b2b; /* Slightly lighter gray on hover */
 }
 
+/* Project Card Links on Hover */
 .project-card:hover .project-links a {
-  color: #f4c842;
+  color: #f4c842; /* Bright yellow on hover */
   transition: color 0.4s ease;
 }
 
 .project-card:hover .project-links a:hover {
-  color: #333;
+  color: #fff; /* Change to white on hover */
   transition: color 0.3s ease-in-out;
 }
 
-/* Video Section Wrapper for Video Projects */
+/* Video Section Wrapper */
 .video-wrapper {
   width: 100%;
   height: 250px;
@@ -164,22 +183,65 @@
   object-fit: cover;
 }
 
+/* Video Projects Hover Effect */
 .video-editing-section .project-card:hover .video-wrapper video {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight scale effect on hover */
   transition: transform 0.4s ease;
 }
 
 /* Responsive for Video Cards */
 @media (max-width: 768px) {
   .video-wrapper {
-    height: 200px;
+      height: 200px; /* Adjust height for smaller screens */
   }
 
   .project-title {
-    font-size: 1.3rem;
+      font-size: 1.3rem; /* Adjust title size for smaller screens */
   }
 
   .project-description {
-    font-size: 0.85rem;
+      font-size: 0.85rem; /* Adjust description size */
   }
+}
+
+
+
+/* Project Card */
+.project-card {
+  background-color: #1c1c1c; /* Dark background for cards */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Adjusted transition timing */
+  position: relative;
+}
+
+/* Hover Effect for Project Card */
+.project-card:hover {
+  transform: translateY(-5px); /* Slight upward movement */
+  box-shadow: 0 15px 40px rgba(247, 210, 0, 0.5); /* Yellow glow effect */
+  background-color: #2b2b2b; /* Change to a lighter dark gray on hover */
+}
+
+/* Scale Image on Hover */
+.project-card:hover .project-image {
+  transform: scale(1.05); /* Slightly scale the image */
+}
+
+/* Special Effects for Hover and Animation */
+.project-card:hover .project-content {
+  background-color: rgba(255, 255, 255, 0.1); /* Light overlay effect on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background change */
+}
+
+/* Project Links on Hover */
+.project-card:hover .project-links a {
+  color: #f4c842; /* Bright yellow on hover */
+  transform: scale(1.1); /* Slight scale effect on link hover */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Project Links Hover Effect */
+.project-card:hover .project-links a:hover {
+  color: #fff; /* Change to white on link hover */
 }
