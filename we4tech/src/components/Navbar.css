@@ -4,7 +4,7 @@
   color: #fff;
   position: sticky;
   top: 0;
-  flex: 0 0 100%;
+  flex: 0 0 97%;
   z-index: 10;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 15px 20px;
@@ -117,9 +117,9 @@
 /* Mobile Navigation Links */
 .nav-links.open {
   position: absolute;
-  top: 95px;
+  top: 75px;
   left: 0;
-  width: 95%;
+  width: 90%;
   flex-direction: column;
   background-color: #000;
   padding: 20px;
