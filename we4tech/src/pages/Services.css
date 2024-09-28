@@ -1,122 +1,162 @@
+/* Services Container */
 .services-container {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #f4f4f4 0%, #eaeaea 100%);
-    color: #000;
-    text-align: center;
-    position: relative;
-    overflow: hidden; /* Allows for the parallax effect */
-  }
-  
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Services Title */
+.services-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  color: #f7d200; /* Yellow Title Color */
+}
+
+/* Services Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  z-index: 1;
+}
+
+/* Service Card with Black Background and Yellow Border Animation */
+.service-card {
+  background-color: #1c1c1c; /* Dark background for cards */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent; /* Transparent border initially */
+}
+
+/* Animated Yellow Border */
+.service-card::before,
+.service-card::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #f7d200; /* Bright yellow line */
+  transition: width 0.4s ease;
+}
+
+.service-card::before {
+  top: 0;
+  left: 0;
+}
+
+.service-card::after {
+  bottom: 0;
+  right: 0;
+}
+
+.service-card:hover::before,
+.service-card:hover::after {
+  width: 100%; /* Line animates across the top and bottom */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(247, 210, 0, 0.4); /* Yellow glow effect */
+  border-color: #f7d200; /* Yellow border on hover */
+  background-color: #2b2b2b; /* Slightly lighter shade of black on hover */
+}
+
+/* Icon with Enhanced Hover Effect */
+.icon {
+  font-size: 3rem;
+  color: #f7d200; /* Yellow color for icons */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Enlarge icon on hover */
+  color: #fff; /* Change icon color to white on hover */
+}
+
+/* Service Title */
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f7d200; /* Yellow service title */
+}
+
+/* Service Description */
+.service-description {
+  font-size: 1rem;
+  color: #bbb; /* Light gray for better readability on black */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* CTA Container */
+.cta-container {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark Overlay for CTA */
+.cta-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  z-index: -1;
+  border-radius: 10px;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #f7d200; /* Bright yellow button */
+  color: #000; /* Dark text on yellow */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffe135; /* Lighter yellow on hover */
+  transform: scale(1.05); /* Enlarge on hover */
+  box-shadow: 0 6px 15px rgba(247, 210, 0, 0.4); /* Yellow glow effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .services-title {
-    font-size: 3rem;
-    margin-bottom: 40px;
-    font-weight: bold;
-    position: relative;
-    z-index: 1; /* Ensure text is above background elements */
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    z-index: 1;
-  }
-  
-  .service-card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    position: relative;
-    overflow: hidden; /* For inner animations */
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    background-color: #f0f8ff; /* Light blue background on hover */
-  }
-  
-  .icon {
-    font-size: 3rem;
-    color: #007acc; /* Change this color as needed */
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  .icon:hover {
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
-  }
-  
-  .service-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #007acc; /* Service title color */
-  }
-  
-  .service-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6; /* Improve readability */
-  }
-  
-  .cta-container {
-    margin-top: 60px;
-    padding: 40px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .cta-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
-    z-index: -1; /* Send behind the text */
-    border-radius: 10px;
-  }
-  
-  .cta-button {
-    background-color: #007acc; /* Button color */
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #005f99; /* Darker shade for hover */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .services-title {
       font-size: 2.5rem; /* Adjust title size for smaller screens */
-    }
-    
-    .service-card {
-      padding: 20px; /* Less padding on smaller screens */
-    }
-  
-    .cta-button {
-      font-size: 1rem; /* Smaller button text on mobile */
-    }
-  
-    .icon {
-      font-size: 2.5rem; /* Smaller icons on mobile */
-    }
   }
-  
+
+  .service-card {
+      padding: 20px; /* Less padding on smaller screens */
+  }
+
+  .cta-button {
+      font-size: 1rem; /* Smaller button text on mobile */
+  }
+
+  .icon {
+      font-size: 2.5rem; /* Smaller icons on mobile */
+  }
+}

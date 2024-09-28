@@ -282,3 +282,6 @@ body {
 .tech-card:hover::after {
   box-shadow: 0 0 10px #f7d200, 0 0 20px #f7d200; /* Glowing effect on borders */
 }
+
+
+
