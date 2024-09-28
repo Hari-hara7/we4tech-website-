@@ -66,50 +66,51 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="why-choose-us-section">
-        <motion.h2
-          initial={{ opacity: 0, y: 50 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.8 }}
-        >
-          Why Choose We4Tech Agency?
-        </motion.h2>
-        <div className="reasons-grid">
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-            className="reason-card"
-          >
-            <FaCheck className="reason-icon" />
-            <h3>Innovative Solutions</h3>
-            <p>We bring innovation and cutting-edge technology to all of our services.</p>
-          </motion.div>
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-            className="reason-card"
-          >
-            <FaCheck className="reason-icon" />
-            <h3>Client Satisfaction</h3>
-            <p>Our clients  success is our priority, and we strive to exceed their expectations.</p>
-          </motion.div>
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-            className="reason-card"
-          >
-            <FaCheck className="reason-icon" />
-            <h3>End-to-End Services</h3>
-            <p>We provide a comprehensive range of services to meet your business needs.</p>
-          </motion.div>
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-            className="reason-card"
-          >
-            <FaCheck className="reason-icon" />
-            <h3>Expert Team</h3>
-            <p>Our team consists of experts in web development, SEO, UI/UX design, and video production.</p>
-          </motion.div>
-        </div>
-      </section>
+    {/* Why Choose Us Section */}
+<section className="why-choose-us-section">
+  <motion.h2
+    initial={{ opacity: 0, y: 50 }} 
+    animate={{ opacity: 1, y: 0 }} 
+    transition={{ duration: 0.8 }}
+  >
+    Why Choose We4Tech Agency?
+  </motion.h2>
+  <div className="reasons-grid">
+    <motion.div 
+      whileHover={{ scale: 1.05 }}
+      className="reason-card"
+    >
+      <FaCheck className="reason-icon" />
+      <h3>Innovative Solutions</h3>
+      <p>We bring innovation and cutting-edge technology to all of our services.</p>
+    </motion.div>
+    <motion.div 
+      whileHover={{ scale: 1.05 }}
+      className="reason-card"
+    >
+      <FaCheck className="reason-icon" />
+      <h3>Client Satisfaction</h3>
+      <p>Our clients' success is our priority, and we strive to exceed their expectations.</p>
+    </motion.div>
+    <motion.div 
+      whileHover={{ scale: 1.05 }}
+      className="reason-card"
+    >
+      <FaCheck className="reason-icon" />
+      <h3>End-to-End Services</h3>
+      <p>We provide a comprehensive range of services to meet your business needs.</p>
+    </motion.div>
+    <motion.div 
+      whileHover={{ scale: 1.05 }}
+      className="reason-card"
+    >
+      <FaCheck className="reason-icon" />
+      <h3>Expert Team</h3>
+      <p>Our team consists of experts in web development, SEO, UI/UX design, and video production.</p>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Parallax Background Section */}
       <section className="parallax-section">
