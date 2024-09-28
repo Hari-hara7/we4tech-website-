@@ -19,7 +19,7 @@ const servicesData = [
       </svg>
     ),
     title: 'Web Development',
-    description: 'We create responsive, high-quality websites that provide a seamless user experience across all devices.',
+    description: 'We create responsive, high-quality websites that provide a seamless user experience across all devices. From simple landing pages to complex web applications, we’ve got you covered.',
   },
   {
     icon: (
@@ -35,7 +35,7 @@ const servicesData = [
       </svg>
     ),
     title: 'Progressive Web Apps (PWA)',
-    description: 'Our PWAs offer a native app-like experience with fast loading times and offline capabilities.',
+    description: 'Our PWAs offer a native app-like experience with fast loading times and offline capabilities, making your applications accessible anytime, anywhere.',
   },
   {
     icon: (
@@ -52,7 +52,7 @@ const servicesData = [
       </svg>
     ),
     title: 'UI/UX Design',
-    description: 'We focus on creating intuitive designs that enhance user satisfaction and engagement.',
+    description: 'We focus on creating intuitive designs that enhance user satisfaction and engagement, ensuring your product is both functional and visually appealing.',
   },
   {
     icon: (
@@ -68,7 +68,7 @@ const servicesData = [
       </svg>
     ),
     title: 'Video Editing',
-    description: 'Professional video editing services that bring your stories to life with stunning visuals and effects.',
+    description: 'Professional video editing services that bring your stories to life with stunning visuals and effects. We create captivating videos that engage and inform your audience.',
   },
   {
     icon: (
@@ -84,7 +84,7 @@ const servicesData = [
       </svg>
     ),
     title: 'SEO Optimization',
-    description: 'Our SEO strategies help your website rank higher on search engines, attracting more visitors and increasing visibility.',
+    description: 'Our SEO strategies help your website rank higher on search engines, attracting more visitors and increasing visibility. We implement the latest techniques to ensure your success online.',
   },
 ];
 
@@ -110,7 +110,7 @@ const Services = () => {
       <div className="cta-container">
         <h2>Ready to take your project to the next level?</h2>
         <p>Contact us today to discuss your requirements and get a free quote!</p>
-        <a href="we4tech1@gmail.com" className="cta-button">Get Started</a>
+        <a href="mailto:we4tech1@gmail.com" className="cta-button">Get Started</a>
       </div>
     </div>
   );
