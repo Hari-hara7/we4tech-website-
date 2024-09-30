@@ -8,11 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(prevState => !prevState);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -26,15 +22,11 @@ const Navbar = () => {
 
           {/* Navigation links for desktop */}
           <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-            {['/', '/services', '/projects', '/about', '/contact'].map((path, index) => (
-              <Link 
-                key={index} 
-                to={path} 
-                onClick={closeMenu}
-              >
-                {path === '/' ? 'Home' : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
-              </Link>
-            ))}
+            <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/services" onClick={() => setIsOpen(false)}>Services</Link>
+            <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
+            <Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
           </div>
 
           {/* Burger menu for mobile */}
@@ -49,21 +41,21 @@ const Navbar = () => {
       {/* Infinity Slider Section */}
       <div className="infinity-slider">
         <div className="slider-content">
-          {[
-            { icon: <FaCode />, label: 'Web Development' },
-            { icon: <FaSearch />, label: 'SEO' },
-            { icon: <FaMobileAlt />, label: 'PWA Development' },
-            { icon: <FaPalette />, label: 'UI/UX Design' },
-            { icon: <FaVideo />, label: 'Video Editing' }
-          ].map((service, index) => (
-            <motion.div 
-              key={index} 
-              className="slide" 
-              whileHover={{ scale: 1.1 }}
-            >
-              {service.icon} <span>{service.label}</span>
-            </motion.div>
-          ))}
+          <motion.div className="slide" whileHover={{ scale: 1.1 }}>
+            <FaCode className="icon" /> <span>Web Development</span>
+          </motion.div>
+          <motion.div className="slide" whileHover={{ scale: 1.1 }}>
+            <FaSearch className="icon" /> <span>SEO</span>
+          </motion.div>
+          <motion.div className="slide" whileHover={{ scale: 1.1 }}>
+            <FaMobileAlt className="icon" /> <span>PWA Development</span>
+          </motion.div>
+          <motion.div className="slide" whileHover={{ scale: 1.1 }}>
+            <FaPalette className="icon" /> <span>UI/UX Design</span>
+          </motion.div>
+          <motion.div className="slide" whileHover={{ scale: 1.1 }}>
+            <FaVideo className="icon" /> <span>Video Editing</span>
+          </motion.div>
         </div>
       </div>
     </>
