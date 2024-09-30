@@ -18,7 +18,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
 }
 
 /* Logo */
@@ -45,7 +45,7 @@
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 12px;
+  padding: 10px 15px;
   font-size: 1.1rem;
   font-weight: 500;
   position: relative;
@@ -117,9 +117,9 @@
 /* Mobile Navigation Links */
 .nav-links.open {
   position: absolute;
-  top: 65px;
+  top: 70px;
   left: 0;
-  width: 100%;
+  width: 90%;
   flex-direction: column;
   background-color: #000;
   padding: 20px;
@@ -295,7 +295,7 @@
 @media (max-width: 768px) {
   .infinity-slider .slider-content {
     animation-duration: 20s; /* Speed up the animation for mobile */
-    gap: 15px; /* Reduced gap for smaller screens */
+    gap: 20px; /* Reduced gap for smaller screens */
   }
 
   .infinity-slider .slide {
