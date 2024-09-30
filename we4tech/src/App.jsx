@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
-import AboutUs from './pages/AboutUs';
+import AboutUs from './pages/About';
 import Contact from './pages/Contact';
 
 const App = () => {
