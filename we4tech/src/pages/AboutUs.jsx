@@ -8,6 +8,7 @@ import Aaran from '../assets/aran.jpg';
 import vedanth from '../assets/vedant.jpg';
 import Teja from '../assets/Teja.jpg';
 import Manohar from '../assets/manohar.png';
+import Devdat from '../assets/Devdat.png';
 
 
 
@@ -43,6 +44,14 @@ const teamMembers = [
     github: 'https://github.com/Vedant10Mahalle',
     linkedin: 'https://www.linkedin.com/in/vedant-mahalle-b217b4290/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BZSINcN5rS3i%2FB8FFRpsrtw%3D%3D',
     photo: vedanth, // Replace with actual path
+  },
+  {
+    name: 'Devdat',
+    role: 'Graphic Designer',
+    description: 'Creative mind behind visual designs and branding strategies.',
+    github: 'https://github.com/devdat2021',
+    linkedin: 'https://www.linkedin.com/in/devdat-p-b59415327/',
+    photo: Devdat, // Replace with actual path
   },
   {
     name: 'Teja',
