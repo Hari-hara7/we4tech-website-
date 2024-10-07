@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import './AboutUs.css'; // Importing styles
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiVite, SiReact, SiTailwindcss, SiBootstrap, SiBulma, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiFirebase } from 'react-icons/si';
+import { SiVite, SiReact, SiTailwindcss, SiBootstrap, SiBulma, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiFirebase, SiTensorflow, SiPython, SiPytorch, SiScikitlearn, SiKeras  } from 'react-icons/si';
 import HARI from '../assets/Hari.jpg';
 import Anand from '../assets/anand.jpeg';
 import Aaran from '../assets/aran.jpg';
@@ -76,7 +76,13 @@ const techStack = [
   { name: 'JavaScript', icon: <SiJavascript /> },
   { name: 'Node.js', icon: <SiNodedotjs /> },
   { name: 'Firebase', icon: <SiFirebase /> },
+  { name: 'TensorFlow', icon: <SiTensorflow /> }, // Added TensorFlow
+  { name: 'Python', icon: <SiPython /> }, // Added Python
+  { name: 'PyTorch', icon: <SiPytorch /> }, // Added PyTorch
+  { name: 'scikit-learn', icon: <SiScikitlearn /> }, // Added scikit-learn
+  { name: 'Keras', icon: <SiKeras /> } // Added Keras
 ];
+
 
 const AboutUs = () => {
   return (

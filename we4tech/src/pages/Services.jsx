@@ -44,16 +44,17 @@ const servicesData = [
         width="40"
         height="40"
         fill="currentColor"
-        className="bi bi-layout"
+        className="bi bi-graph-up"
         viewBox="0 0 16 16"
       >
         <path d="M0 0h16v16H0V0zm1 1v14h14V1H1z" />
         <path d="M1 1v14h14V1H1zm3 3h8v8H4V4z" />
       </svg>
     ),
-    title: 'UI/UX Design',
-    description: 'We focus on creating intuitive designs that enhance user satisfaction and engagement, ensuring your product is both functional and visually appealing.',
-  },
+    title: 'Machine Learning Projects',
+    description: 'We develop machine learning solutions integrated with web applications, providing data-driven insights and intelligent functionalities to enhance user experience and decision-making.'
+}
+,
   {
     icon: (
       <svg

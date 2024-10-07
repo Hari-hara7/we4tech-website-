@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Navbar.css'; // Importing styles
-import { FaCode, FaSearch, FaMobileAlt, FaPalette, FaVideo } from 'react-icons/fa';
+import { FaCode, FaSearch, FaMobileAlt, FaPalette, FaVideo,FaBrain } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,7 @@ const Navbar = () => {
             <FaMobileAlt className="icon" /> <span>PWA Development</span>
           </motion.div>
           <motion.div className="slide" whileHover={{ scale: 1.1 }}>
-            <FaPalette className="icon" /> <span>UI/UX Design</span>
+            <FaBrain className="icon" /> <span>Web Ml</span>
           </motion.div>
           <motion.div className="slide" whileHover={{ scale: 1.1 }}>
             <FaVideo className="icon" /> <span>Video Editing</span>

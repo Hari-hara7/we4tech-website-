@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaRocket, FaMobileAlt, FaPaintBrush, FaVideo, FaCheck } from 'react-icons/fa';
+import { FaRocket, FaMobileAlt, FaPaintBrush, FaVideo, FaCheck,FaBrain } from 'react-icons/fa';
 import { useEffect } from 'react';
 import './Home.css'; // Importing styles
 
@@ -20,63 +20,68 @@ const Home = () => {
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero-section">
-        <motion.div 
-          initial={{ opacity: 0, y: -100 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 1 }}
-          className="hero-content"
-        >
-          <h1>We4Tech Agency</h1>
-          <p>Innovating digital solutions with cutting-edge web development, SEO, graphic design, video editing, and UI/UX design.</p>
-          <Link to="/services" className="btn">Explore Services</Link>
-        </motion.div>
-      </section>
-
-      {/* Services Section */}
       <section className="services-section parallax">
-        <motion.h2 
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }} 
-          transition={{ delay: 0.5, duration: 1 }}
+      <motion.h2 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        transition={{ delay: 0.5, duration: 1 }}
+      >
+        Our Expertise
+      </motion.h2>
+      <div className="services-grid">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="service-card"
         >
-          Our Expertise
-        </motion.h2>
-        <div className="services-grid">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="service-card"
-          >
-            <FaRocket className="service-icon" />
-            <h3>Web Development</h3>
-            <p>We create responsive, fast, and modern websites, ensuring a smooth user experience and PWA capabilities.</p>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="service-card"
-          >
-            <FaMobileAlt className="service-icon" />
-            <h3>PWA & SEO</h3>
-            <p>Optimize your web presence with Progressive Web Apps and powerful SEO strategies for better visibility.</p>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="service-card"
-          >
-            <FaPaintBrush className="service-icon" />
-            <h3>Graphic Design</h3>
-            <p>Stand out with stunning, creative visuals that align with your brand identity.</p>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="service-card"
-          >
-            <FaVideo className="service-icon" />
-            <h3>Video Editing</h3>
-            <p>High-quality video production and editing services that help tell your story in a captivating way.</p>
-          </motion.div>
-        </div>
-      </section>
+          <FaRocket className="service-icon" />
+          <h3>Web Development</h3>
+          <p>We create responsive, fast, and modern websites, ensuring a smooth user experience and PWA capabilities.</p>
+        </motion.div>
+        
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="service-card"
+        >
+          <FaMobileAlt className="service-icon" />
+          <h3>PWA & SEO</h3>
+          <p>Optimize your web presence with Progressive Web Apps and powerful SEO strategies for better visibility.</p>
+        </motion.div>
+        
+
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="service-card"
+        >
+          <FaBrain className="service-icon" />
+          <h3>Machine Learning</h3>
+          <p>Unlock insights and automation with advanced machine learning solutions that enhance user experience and drive intelligent decision-making.</p>
+        </motion.div>
+
+
+
+
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="service-card"
+        >
+          <FaPaintBrush className="service-icon" />
+          <h3>Graphic Design</h3>
+          <p>Stand out with stunning, creative visuals that align with your brand identity.</p>
+        </motion.div>
+
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="service-card"
+        >
+          <FaVideo className="service-icon" />
+          <h3>Video Editing</h3>
+          <p>High-quality video production and editing services that help tell your story in a captivating way.</p>
+        </motion.div>
+
+        {/* New Machine Learning Project Card */}
+       
+      </div>
+    </section>
 
       {/* Why Choose Us Section */}
       <section className="why-choose-us-section">
