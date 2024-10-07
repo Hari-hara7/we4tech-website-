@@ -55,8 +55,8 @@ const teamMembers = [
   },
   {
     name: 'Teja',
-    role: 'UI/UX Designer',
-    description: 'Expert in user-centered design and enhancing user experience.',
+    role: 'Machine Learning Integrator',
+    description: 'Specializes in integrating machine learning models into real-world applications, with a focus on seamless deployment and scalability.',
     github: 'https://github.com/orgs/We4tech4-0/people/Gunateja653',
     linkedin: 'https://www.linkedin.com/in/guna-teja-sarvan-patnaik-0942a2275/',
     photo: Teja , // Replace with actual path
