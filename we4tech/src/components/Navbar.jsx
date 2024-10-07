@@ -51,7 +51,7 @@ const Navbar = () => {
             <FaMobileAlt className="icon" /> <span>PWA Development</span>
           </motion.div>
           <motion.div className="slide" whileHover={{ scale: 1.1 }}>
-            <FaBrain className="icon" /> <span>Web Ml</span>
+            <FaBrain className="icon" /> <span>Web ML</span>
           </motion.div>
           <motion.div className="slide" whileHover={{ scale: 1.1 }}>
             <FaVideo className="icon" /> <span>Video Editing</span>
