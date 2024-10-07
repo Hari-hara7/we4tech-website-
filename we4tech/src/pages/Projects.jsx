@@ -2,10 +2,10 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './Projects.css';
 import academicPalImage from '../assets/academicpal.png';
-import globallane from '../assets/Globallane.png';
-import designGrid from '../assets/designgrid.png';
-import skillCrafters from '../assets/skillcrafters.png';
-import academicpal20 from '../assets/academicpal2.0.png';
+import globallane from '../assets/globallane.jpg';
+import designGrid from '../assets/designgrid.jpg';
+import skillCrafters from '../assets/skill crafters.jpg';
+import academicpal20 from '../assets/academic2.0.jpg';
 import portfolio1 from '../assets/portfolio1.png';
 import portfolio2 from '../assets/portfolio2.png';
 import portfolio3 from '../assets/portfolio3.png';
@@ -20,6 +20,7 @@ import graphic1 from '../assets/graphic1.png';
 import graphic2 from '../assets/graphic2.png';
 import graphic3 from '../assets/graphic3.png';
 import graphic4 from '../assets/graphic4.png';
+import acm from '../assets/acm.jpg';
 
 
 
@@ -59,6 +60,13 @@ const projects = [
     description: "Enhanced version of Academic Pal with personalized study plans and quizzes.",
     image: academicpal20,
     websiteLink: "https://academic-pal-v9t9.onrender.com/",
+    githubLink: "https://github.com/academicpal2"
+  },
+  {
+    title: "ACM Club  website",
+    description: "The ACM Club website serves as a hub for students passionate about computer science and technology. It features personalized study plans, interactive quizzes, and resources to enhance programming skills. Join a community of learners, collaborate on projects, and participate in workshops and events designed to foster innovation and professional growth.",
+    image: acm,
+    websiteLink: "https://acm-website2.vercel.app/",
     githubLink: "https://github.com/academicpal2"
   }
 ];
