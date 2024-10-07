@@ -13,14 +13,7 @@ import Devdat from '../assets/Devdat.png';
 
 
 const teamMembers = [
-  {
-    name: 'Hariharanath',
-    role: 'Frontend Developer',
-    description: 'Specializing in creating user-friendly interfaces and dynamic web applications.',
-    github: 'https://github.com/Hari-hara7',
-    linkedin: 'https://www.linkedin.com/in/hari-hara-nath-a13583282/',
-    photo: HARI, // Updated to use require for images
-  },
+  
   {
     name: 'Anand',
     role: 'Backend Developer',
