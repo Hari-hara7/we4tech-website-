@@ -6,7 +6,7 @@ import HARI from '../assets/Hari.jpg';
 import Anand from '../assets/anand.jpeg';
 import Aaran from '../assets/aran.jpg';
 import vedanth from '../assets/vedant.jpg';
-import Teja from '../assets/Teja.jpg';
+import Teja from '../assets/Teja2.jpg';
 import Manohar from '../assets/manohar.png';
 import Devdat from '../assets/Devdat.png';
 
