@@ -23,6 +23,14 @@ const teamMembers = [
     photo: Anand, // Replace with actual path
   },
   {
+    name: 'Teja',
+    role: 'Machine Learning Integrator',
+    description: 'Specializes in integrating machine learning models into real-world applications, with a focus on seamless deployment and scalability.',
+    github: 'https://github.com/orgs/We4tech4-0/people/Gunateja653',
+    linkedin: 'https://www.linkedin.com/in/guna-teja-sarvan-patnaik-0942a2275/',
+    photo: Teja , // Replace with actual path
+  },
+  {
     name: 'Aaran',
     role: 'Frontend Developer',
     description: 'Passionate about building seamless web experiences and engaging user interfaces.',
@@ -46,14 +54,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/devdat-p-b59415327/',
     photo: Devdat, // Replace with actual path
   },
-  {
-    name: 'Teja',
-    role: 'Machine Learning Integrator',
-    description: 'Specializes in integrating machine learning models into real-world applications, with a focus on seamless deployment and scalability.',
-    github: 'https://github.com/orgs/We4tech4-0/people/Gunateja653',
-    linkedin: 'https://www.linkedin.com/in/guna-teja-sarvan-patnaik-0942a2275/',
-    photo: Teja , // Replace with actual path
-  },
+  
   {
     name: 'Manohar',
     role: 'Video Editor',
