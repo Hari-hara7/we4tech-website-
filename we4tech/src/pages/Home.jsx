@@ -6,14 +6,31 @@ import './Home.css'; // Importing styles
 
 const Home = () => {
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "//code.tidio.co/qnqhv178gomielhckx7xnojtikcpyjbk.js";
-    script.async = true;
-    document.body.appendChild(script);
+    // Tidio script
+    const tidioScript = document.createElement('script');
+    tidioScript.src = "//code.tidio.co/qnqhv178gomielhckx7xnojtikcpyjbk.js";
+    tidioScript.async = true;
+    document.body.appendChild(tidioScript);
 
-    // Clean up the script when the component unmounts
+    // Google Analytics script
+    const gaScript = document.createElement('script');
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-BPM4F8NM9M";
+    gaScript.async = true;
+    document.body.appendChild(gaScript);
+
+    gaScript.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-BPM4F8NM9M');
+    };
+
+    // Clean up scripts on component unmount
     return () => {
-      document.body.removeChild(script);
+      document.body.removeChild(tidioScript);
+      document.body.removeChild(gaScript);
     };
   }, []);
 
