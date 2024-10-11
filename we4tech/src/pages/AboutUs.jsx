@@ -1,19 +1,16 @@
 import { motion } from 'framer-motion';
 import './AboutUs.css'; // Importing styles
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiVite, SiReact, SiTailwindcss, SiBootstrap, SiBulma, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiFirebase, SiTensorflow, SiPython, SiPytorch, SiScikitlearn, SiKeras  } from 'react-icons/si';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { SiVite, SiReact, SiTailwindcss, SiBootstrap, SiBulma, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiFirebase, SiTensorflow, SiPython, SiPytorch, SiScikitlearn, SiKeras } from 'react-icons/si';
 import HARI from '../assets/Hari.jpg';
 import Anand from '../assets/anand.jpeg';
 import Aaran from '../assets/aran.jpg';
 import vedanth from '../assets/vedant.jpg';
 import Teja from '../assets/teja3.jpg';
-import Manohar from '../assets/manohar.png';
+import Manohar from '../assets/Screenshot 2024-10-11 215812.png';
 import Devdat from '../assets/Devdat.png';
 
-
-
 const teamMembers = [
-  
   {
     name: 'Anand',
     role: 'Backend Developer',
@@ -28,7 +25,7 @@ const teamMembers = [
     description: 'Specializes in integrating machine learning models into real-world applications, with a focus on seamless deployment and scalability.',
     github: 'https://github.com/Gunateja653',
     linkedin: 'https://www.linkedin.com/in/guna-teja-sarvan-patnaik-0942a2275/',
-    photo: Teja , // Replace with actual path
+    photo: Teja, // Replace with actual path
   },
   {
     name: 'Aaran',
@@ -54,13 +51,11 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/devdat-p-b59415327/',
     photo: Devdat, // Replace with actual path
   },
-  
   {
     name: 'Manohar',
     role: 'Video Editor',
     description: 'Skilled in crafting engaging video content and post-production editing.',
-    github: 'https://avatars.githubusercontent.com/u/177780995?s=70&v=4',
-    linkedin: 'https://linkedin.com/in/manohar',
+    instagram: 'https://www.instagram.com/manoharnaik09/', // Instagram link added
     photo: Manohar, // Replace with actual path
   },
 ];
@@ -80,9 +75,8 @@ const techStack = [
   { name: 'Python', icon: <SiPython /> }, // Added Python
   { name: 'PyTorch', icon: <SiPytorch /> }, // Added PyTorch
   { name: 'scikit-learn', icon: <SiScikitlearn /> }, // Added scikit-learn
-  { name: 'Keras', icon: <SiKeras /> } // Added Keras
+  { name: 'Keras', icon: <SiKeras /> }, // Added Keras
 ];
-
 
 const AboutUs = () => {
   return (
@@ -102,12 +96,21 @@ const AboutUs = () => {
             <p className="team-member-role">{member.role}</p>
             <p className="team-member-description">{member.description}</p>
             <div className="social-links">
-              <a href={member.github} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
-                <FaGithub />
-              </a>
-              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
-                <FaLinkedin />
-              </a>
+              {member.github && (
+                <a href={member.github} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
+                  <FaGithub />
+                </a>
+              )}
+              {member.linkedin && (
+                <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
+                  <FaLinkedin />
+                </a>
+              )}
+              {member.instagram && (
+                <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
+                  <FaInstagram />
+                </a>
+              )}
             </div>
             <a href={member.github} target="_blank" rel="noopener noreferrer" className="github-button">
               View GitHub
