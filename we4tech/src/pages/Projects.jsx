@@ -6,8 +6,8 @@ import globallane from '../assets/globallane.jpg';
 import designGrid from '../assets/designgrid.jpg';
 import skillCrafters from '../assets/skill crafters.jpg';
 import academicpal20 from '../assets/academic2.0.jpg';
-import portfolio1 from '../assets/portfolio1.png';
-import portfolio2 from '../assets/portfolio2.png';
+import portfolio1 from '../assets/Screenshot 2024-10-18 203028.png';
+
 import portfolio3 from '../assets/portfolio3.png';
 import portfolio4 from '../assets/portfolio4.png';
 import video1 from '../assets/video1.mp4';
@@ -21,7 +21,16 @@ import graphic2 from '../assets/graphic2.png';
 import graphic3 from '../assets/graphic3.png';
 import graphic4 from '../assets/graphic4.png';
 import acm from '../assets/acm.jpg';
-
+import portfolio5 from '../assets/Portfolio5.png';
+import portfolio6 from '../assets/Screenshot 2024-10-18 200552.png';
+import portfolio7 from '../assets/Screenshot 2024-10-18 200650.png';
+import portfolio8 from '../assets/Screenshot 2024-10-18 200814.png';
+import portfolio9 from '../assets/Screenshot 2024-10-18 200855.png';
+import portfolio10 from '../assets/Screenshot 2024-10-18 201015.png';
+import portfolio11 from '../assets/Screenshot 2024-10-18 201117.png';
+import portfolio12 from '../assets/Screenshot 2024-10-18 201247.png';
+import portfolio13 from '../assets/Screenshot 2024-10-18 204055.png';
+import portfolio14 from '../assets/Screenshot 2024-10-18 204513.png';
 
 
 // Project data for different categories
@@ -79,11 +88,76 @@ const portfolios = [
     websiteLink: "https://hari-portfolio-one.vercel.app/",
     githubLink: "#"
   },
+  
+  
   {
-    title: "Freelancer Portfolio",
-    description: "Interactive portfolio for freelancers.",
-    image: portfolio2,
-    websiteLink: "https://topg.dad/",
+    title: "SRM CSE Portfolio 1",
+    description: "Custom portfolio designed for SRM CSE students.",
+    image: portfolio5,
+    websiteLink: "https://harsha.is-cod.in",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 2",
+    description: "Engaging and modern portfolio for SRM CSE students.",
+    image: portfolio6,
+    websiteLink: "https://y-bharath.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 3",
+    description: "Sleek portfolio template with interactive features for SRM CSE students.",
+    image: portfolio7,
+    websiteLink: "https://s-guru-charan.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 4",
+    description: "Responsive portfolio for SRM CSE students showcasing projects.",
+    image: portfolio8,
+    websiteLink: "https://chandrahaas.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 5",
+    description: "Stylish portfolio template for SRM CSE students with a focus on clean design.",
+    image: portfolio9,
+    websiteLink: "https://abhinavreddyportfolio.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 6",
+    description: "Portfolio template featuring academic and project work for SRM CSE students.",
+    image: portfolio10,
+    websiteLink: "https://mahendra-portfolio-five.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 7",
+    description: "A professional portfolio template designed for SRM CSE students.",
+    image: portfolio11,
+    websiteLink: "https://saianuragh.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 8",
+    description: "Interactive and modern portfolio showcasing SRM CSE student projects.",
+    image: portfolio12,
+    websiteLink: "https://l-dinesh.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 9",
+    description: "Interactive and modern portfolio showcasing SRM CSE student projects.",
+    image: portfolio13,
+    websiteLink: "https://achyuth-zeta.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 10",
+    description: "Interactive and modern portfolio showcasing SRM CSE student projects.",
+    image: portfolio14,
+    websiteLink: "https://r-kiran.vercel.app/",
     githubLink: "#"
   },
   {
@@ -99,7 +173,7 @@ const portfolios = [
     image: portfolio4,
     websiteLink: "https://73320e7a-14af-4175-9514-b0f8601f8cf8-00-1uhib662k0v0a.spock.replit.dev/",
     githubLink: "#"
-  }
+  },
 ];
 
 const videoEditingProjects = [
