@@ -31,6 +31,8 @@ import portfolio11 from '../assets/Screenshot 2024-10-18 201117.png';
 import portfolio12 from '../assets/Screenshot 2024-10-18 201247.png';
 import portfolio13 from '../assets/Screenshot 2024-10-18 204055.png';
 import portfolio14 from '../assets/Screenshot 2024-10-18 204513.png';
+import portfolio15 from '../assets/Screenshot 2024-10-18 232953.png';
+import portfolio16 from '../assets/Screenshot 2024-10-18 233056.png';
 
 
 // Project data for different categories
@@ -99,18 +101,19 @@ const portfolios = [
   },
   {
     title: "SRM CSE Portfolio 2",
+    description: "Interactive and modern portfolio showcasing SRM CSE student projects.",
+    image: portfolio16,
+    websiteLink: "https://r-kiran.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 3",
     description: "Engaging and modern portfolio for SRM CSE students.",
     image: portfolio6,
     websiteLink: "https://y-bharath.vercel.app/",
     githubLink: "#"
   },
-  {
-    title: "SRM CSE Portfolio 3",
-    description: "Sleek portfolio template with interactive features for SRM CSE students.",
-    image: portfolio7,
-    websiteLink: "https://s-guru-charan.vercel.app/",
-    githubLink: "#"
-  },
+  
   {
     title: "SRM CSE Portfolio 4",
     description: "Responsive portfolio for SRM CSE students showcasing projects.",
@@ -158,6 +161,20 @@ const portfolios = [
     description: "Interactive and modern portfolio showcasing SRM CSE student projects.",
     image: portfolio14,
     websiteLink: "https://r-kiran.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 11",
+    description: "Interactive and modern portfolio showcasing SRM CSE student projects.",
+    image: portfolio15,
+    websiteLink: "https://r-kiran.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 12",
+    description: "Sleek portfolio template with interactive features for SRM CSE students.",
+    image: portfolio7,
+    websiteLink: "https://s-guru-charan.vercel.app/",
     githubLink: "#"
   },
   {
