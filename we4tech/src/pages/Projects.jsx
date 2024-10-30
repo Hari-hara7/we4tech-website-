@@ -205,14 +205,14 @@ const portfolios = [
     title: "SRM CSE Portfolio 16",
     description: "Sleek portfolio template with interactive features for SRM CSE students.",
     image: portfolio30,
-    websiteLink: "https://srinath.vercel.app/",
+    websiteLink: "https://dheepesh.vercel.app/",
     githubLink: "#"
   },
   {
     title: "SRM CSE Portfolio 17",
     description: "Sleek portfolio template with interactive features for SRM CSE students.",
     image: portfolio31,
-    websiteLink: "https://srinath.vercel.app/",
+    websiteLink: "https://manojh-s.vercel.app/",
     githubLink: "#"
   },
   {
