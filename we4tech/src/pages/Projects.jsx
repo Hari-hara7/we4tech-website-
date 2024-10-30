@@ -33,8 +33,11 @@ import portfolio13 from '../assets/Screenshot 2024-10-18 204055.png';
 import portfolio14 from '../assets/Screenshot 2024-10-18 204513.png';
 import portfolio15 from '../assets/Screenshot 2024-10-18 232953.png';
 import portfolio16 from '../assets/Screenshot 2024-10-18 233056.png';
-
-
+import portfolio27 from '../assets/Screenshot 2024-10-30 181728.png';
+import portfolio28 from '../assets/Screenshot 2024-10-30 183847.png';
+import portfolio29 from '../assets/Screenshot 2024-10-30 184254.png';
+import portfolio30 from '../assets/Screenshot 2024-10-30 184523.png';
+import portfolio31 from '../assets/Screenshot 2024-10-30 184756.png';
 // Project data for different categories
 const projects = [
   
@@ -175,6 +178,41 @@ const portfolios = [
     description: "Sleek portfolio template with interactive features for SRM CSE students.",
     image: portfolio7,
     websiteLink: "https://s-guru-charan.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 13",
+    description: "Sleek portfolio template with interactive features for SRM CSE students.",
+    image: portfolio27,
+    websiteLink: "https://achuthan.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 14",
+    description: "Sleek portfolio template with interactive features for SRM CSE students.",
+    image: portfolio28,
+    websiteLink: "https://srinath.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 15",
+    description: "Sleek portfolio template with interactive features for SRM CSE students.",
+    image: portfolio29,
+    websiteLink: "https://srinath.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 16",
+    description: "Sleek portfolio template with interactive features for SRM CSE students.",
+    image: portfolio30,
+    websiteLink: "https://srinath.vercel.app/",
+    githubLink: "#"
+  },
+  {
+    title: "SRM CSE Portfolio 17",
+    description: "Sleek portfolio template with interactive features for SRM CSE students.",
+    image: portfolio31,
+    websiteLink: "https://srinath.vercel.app/",
     githubLink: "#"
   },
   {
