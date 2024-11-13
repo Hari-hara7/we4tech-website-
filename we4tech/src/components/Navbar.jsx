@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './Navbar.css'; // Importing styles
 import { FaCode, FaSearch, FaMobileAlt, FaPalette, FaVideo,FaBrain } from 'react-icons/fa';
 
