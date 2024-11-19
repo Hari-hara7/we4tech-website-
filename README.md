@@ -4,6 +4,10 @@
   <img src="WhatsApp Image 2024-10-07 at 16.48.18_920f7b20.jpg" alt="We4Tech Agency Logo">
 </p>
 
+<p align="center">
+  <img src="banner.png" alt="We4Tech Agency Logo">
+</p>
+
 Welcome to the We4Tech Agency website repository. This single-page application (SPA) is built with React, featuring seamless navigation, modular components, and a clean, professional layout. The website includes pages for Home, Services, Projects, About Us, and Contact, providing a comprehensive overview of We4Tech's offerings and expertise.
 
 ## Features
