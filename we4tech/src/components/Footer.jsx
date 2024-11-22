@@ -1,11 +1,17 @@
-
 import './Footer.css'; // Importing styles
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; // Importing icons
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
+  const handleNewsletterSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    console.log(`Email submitted: ${email}`);
+    // Here you can add code to send the email to your backend or service.
+    e.target.reset(); // Reset the form after submission
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -16,16 +22,16 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="footer-section quick-links">
+        <nav className="footer-section quick-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
-        </div>
+        </nav>
 
         {/* Newsletter */}
         <div className="footer-section newsletter">
