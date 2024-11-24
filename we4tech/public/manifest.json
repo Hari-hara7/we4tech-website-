@@ -1,0 +1,22 @@
+{
+    "name": "we4tech",
+    "short_name": "we4tech",
+    "description": "A Progressive Web App built with React, javaScript, CSS, and Framer Motion.",
+    "theme_color": "#3bc2ca",
+    "background_color": "#030712",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "/icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icons/icon-192x192.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
