@@ -88,14 +88,14 @@ const projects = [
 
 const portfolios = [
   {
-    title: "Student Portfolio",
+    title: "professional Portfolio",
     description: "Interactive portfolio for students.",
     image: portfolio32,
     websiteLink: "https://hariharanath.is-cod.in/",
     githubLink: "#"
   },
   {
-    title: "Student Portfolio",
+    title: "Personal Portfolio",
     description: "Interactive portfolio for students.",
     image: portfolio1,
     websiteLink: "https://hari-portfolio-one.vercel.app/",
