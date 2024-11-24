@@ -38,6 +38,7 @@ import portfolio28 from '../assets/Screenshot 2024-10-30 183847.png';
 import portfolio29 from '../assets/Screenshot 2024-10-30 184254.png';
 import portfolio30 from '../assets/Screenshot 2024-10-30 184523.png';
 import portfolio31 from '../assets/Screenshot 2024-10-30 184756.png';
+import portfolio32 from '../assets/banner.png';
 // Project data for different categories
 const projects = [
   
@@ -86,6 +87,13 @@ const projects = [
 ];
 
 const portfolios = [
+  {
+    title: "Student Portfolio",
+    description: "Interactive portfolio for students.",
+    image: portfolio32,
+    websiteLink: "https://hariharanath.is-cod.in/",
+    githubLink: "#"
+  },
   {
     title: "Student Portfolio",
     description: "Interactive portfolio for students.",
