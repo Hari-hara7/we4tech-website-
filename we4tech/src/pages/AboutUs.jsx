@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import './AboutUs.css'; // Importing styles
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import { SiVite, SiReact, SiTailwindcss, SiBootstrap, SiBulma, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiFirebase, SiTensorflow, SiPython, SiPytorch, SiScikitlearn, SiKeras } from 'react-icons/si';
+import { SiSocketdotio,SiVite, SiReact, SiTailwindcss, SiBootstrap, SiBulma, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiFirebase, SiTensorflow, SiPython, SiPytorch, SiScikitlearn, SiKeras } from 'react-icons/si';
 import HARI from '../assets/hari.jpeg';
 import Anand from '../assets/anand.jpeg';
 import Aaran from '../assets/aran.jpg';
@@ -17,7 +17,8 @@ const teamMembers = [
     description: 'Passionate about creating dynamic web applications and learning new technologies. Experienced in both frontend and backend development, specializing in building user-friendly and scalable solutions.',
     github: 'https://github.com/Hari-hara7',
     linkedin: 'https://www.linkedin.com/in/hari-hara-nath-a13583282/',
-    photo: HARI, // Replace with actual path to Hariharanath's photo
+    portfolio: 'https://hariharanath.is-cod.in/', // New portfolio link
+    photo: HARI,
   },
   {
     name: 'Anand',
@@ -69,6 +70,7 @@ const teamMembers = [
 ];
 
 const techStack = [
+  { name: 'Socket.IO', icon: <SiSocketdotio /> },
   { name: 'Vite', icon: <SiVite /> },
   { name: 'React', icon: <SiReact /> },
   { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
@@ -98,44 +100,50 @@ const AboutUs = () => {
 
       <div className="team-container">
         {teamMembers.map((member) => (
-          <motion.div className="team-card" key={member.name} initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
-            <img src={member.photo} alt={`${member.name}`} className="team-photo" />
-            <h3 className="team-member-name">{member.name}</h3>
-            <p className="team-member-role">{member.role}</p>
-            <p className="team-member-description">{member.description}</p>
-            <div className="social-links">
-              {member.github && (
-                <a href={member.github} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
-                  <FaGithub />
-                </a>
-              )}
-              {member.linkedin && (
-                <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
-                  <FaLinkedin />
-                </a>
-              )}
-              {member.instagram && (
-                <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
-                  <FaInstagram />
-                </a>
-              )}
-            </div>
-            <a href={member.github} target="_blank" rel="noopener noreferrer" className="github-button">
-              View GitHub
+        <motion.div className="team-card" key={member.name} initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
+        <img src={member.photo} alt={`${member.name}`} className="team-photo" />
+        <h3 className="team-member-name">{member.name}</h3>
+        <p className="team-member-role">{member.role}</p>
+        <p className="team-member-description">{member.description}</p>
+        <div className="social-links">
+          {member.github && (
+            <a href={member.github} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
+              <FaGithub />
             </a>
-          </motion.div>
-        ))}
-      </div>
-
-      <motion.h2 className="tech-stack-title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }}>
-        Tech Stack
-      </motion.h2>
-      <div className="tech-stack-container">
-        {techStack.map((tech) => (
-          <motion.div className="tech-card" key={tech.name} initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
-            <div className="tech-icon">{tech.icon}</div>
-            <p className="tech-name">{tech.name}</p>
-          </motion.div>
+          )}
+          {member.linkedin && (
+            <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
+              <FaLinkedin />
+            </a>
+          )}
+          {member.instagram && (
+            <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+          )}
+          {/* Add portfolio button */}
+          {member.portfolio && (
+            <a href={member.portfolio} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Portfolio">
+              <SiVite /> {/* Or use any other icon that suits the portfolio button */}
+            </a>
+          )}
+        </div>
+        <a href={member.github} target="_blank" rel="noopener noreferrer" className="github-button">
+          View GitHub
+        </a>
+      </motion.div>
+       ))}
+       </div>
+ 
+       <motion.h2 className="tech-stack-title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }}>
+         Tech Stack
+       </motion.h2>
+       <div className="tech-stack-container">
+         {techStack.map((tech) => (
+           <motion.div className="tech-card" key={tech.name} initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
+             <div className="tech-icon">{tech.icon}</div>
+             <p className="tech-name">{tech.name}</p>
+           </motion.div>
         ))}
       </div>
     </div>
