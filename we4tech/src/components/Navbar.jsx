@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { FaCode, FaSearch, FaMobileAlt, FaBrain, FaVideo } from 'react-icons/fa';
 import './Navbar.css'; // Importing styles
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
