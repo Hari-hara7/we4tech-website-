@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import './AboutUs.css'; // Importing styles
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { SiVite, SiReact, SiTailwindcss, SiBootstrap, SiBulma, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiFirebase, SiTensorflow, SiPython, SiPytorch, SiScikitlearn, SiKeras } from 'react-icons/si';
-import HARI from '../assets/Hari.jpg';
+import HARI from '../assets/hari.jpeg';
 import Anand from '../assets/anand.jpeg';
 import Aaran from '../assets/aran.jpg';
 import vedanth from '../assets/vedant.jpg';
@@ -12,8 +12,16 @@ import Devdat from '../assets/Devdat.png';
 
 const teamMembers = [
   {
+    name: 'Hariharanath',
+    role: 'Full Stack Developer',
+    description: 'Passionate about creating dynamic web applications and learning new technologies. Experienced in both frontend and backend development, specializing in building user-friendly and scalable solutions.',
+    github: 'https://github.com/Hari-hara7',
+    linkedin: 'https://www.linkedin.com/in/hari-hara-nath-a13583282/',
+    photo: HARI, // Replace with actual path to Hariharanath's photo
+  },
+  {
     name: 'Anand',
-    role: 'Backend Developer',
+    role: 'Full Stack Developer',
     description: 'Experienced in server-side logic and database management for robust applications.',
     github: 'https://github.com/anandbobba',
     linkedin: 'https://www.linkedin.com/in/anandbobba/',
