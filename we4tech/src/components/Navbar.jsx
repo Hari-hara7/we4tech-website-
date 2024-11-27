@@ -1,7 +1,18 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaCode, FaSearch, FaMobileAlt, FaBrain, FaVideo } from 'react-icons/fa';
+import {
+  FaHome,
+  FaTools,
+  FaProjectDiagram,
+  FaUsers,
+  FaEnvelope,
+  FaCode,
+  FaSearch,
+  FaMobileAlt,
+  FaBrain,
+  FaVideo,
+} from 'react-icons/fa';
 import './Navbar.css'; // Importing styles
 
 const Navbar = () => {
@@ -22,11 +33,21 @@ const Navbar = () => {
 
           {/* Navigation links for desktop */}
           <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-            <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link to="/services" onClick={() => setIsOpen(false)}>Services</Link>
-            <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
-            <Link to="/about" onClick={() => setIsOpen(false)}>Team</Link>
-            <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+            <Link to="/" onClick={() => setIsOpen(false)}>
+              <FaHome className="nav-icon" /> Home
+            </Link>
+            <Link to="/services" onClick={() => setIsOpen(false)}>
+              <FaTools className="nav-icon" /> Services
+            </Link>
+            <Link to="/projects" onClick={() => setIsOpen(false)}>
+              <FaProjectDiagram className="nav-icon" /> Projects
+            </Link>
+            <Link to="/about" onClick={() => setIsOpen(false)}>
+              <FaUsers className="nav-icon" /> Team
+            </Link>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>
+              <FaEnvelope className="nav-icon" /> Contact
+            </Link>
           </div>
 
           {/* Burger menu for mobile */}

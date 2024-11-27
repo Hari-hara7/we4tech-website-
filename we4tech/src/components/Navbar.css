@@ -1,6 +1,6 @@
 /* General Navbar Styles */
 .navbar {
-  background: linear-gradient(90deg, #000, #333); /* Smooth gradient */
+  background: linear-gradient(90deg, #000, #000000); /* Smooth gradient */
   color: #fff;
   position: sticky;
   top: 0;
@@ -85,19 +85,19 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   transition: background 0.3s ease; /* Transition effect */
 }
 
 .burger:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+  background-color: rgba(0, 0, 0, 0.2); /* Hover effect */
 }
 
 .line {
   width: 30px;
   height: 3px;
-  background-color: #fff;
+  background-color: #f4c842;
   margin: 5px 0;
   transition: transform 0.4s ease, background-color 0.4s ease;
 }
@@ -143,7 +143,7 @@
 
 /* Infinity Slider */
 .infinity-slider {
-  background-color: #111; /* Slight contrast */
+  background-color: #343232; /* Slight contrast */
   padding: 10px 0;
   position: relative;
   display: flex;
