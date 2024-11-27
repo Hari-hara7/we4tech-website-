@@ -6,7 +6,7 @@ import HARI from '../assets/hari.jpeg';
 import Anand from '../assets/anand.jpeg';
 import Aaran from '../assets/aran.jpg';
 import vedanth from '../assets/vedant.jpg';
-import Teja from '../assets/WhatsApp Image 2024-10-18 at 21.08.55_2fd43143.jpg';
+import Teja from '../assets/pushaparaj.jpg';
 import Manohar from '../assets/Screenshot 2024-10-11 215812.png';
 import Devdat from '../assets/Devdat.png';
 
