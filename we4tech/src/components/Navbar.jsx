@@ -13,7 +13,7 @@ import {
   FaBrain,
   FaVideo,
 } from 'react-icons/fa';
-import './Navbar.css'; // Importing styles
+import './Navbar.css'; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,12 +26,12 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          {/* Logo */}
+          
           <div className="logo">
             <Link to="/">We4Tech</Link>
           </div>
 
-          {/* Navigation links for desktop */}
+       
           <div className={`nav-links ${isOpen ? 'open' : ''}`}>
             <Link to="/" onClick={() => setIsOpen(false)}>
               <FaHome className="nav-icon" /> Home
@@ -50,7 +50,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Burger menu for mobile */}
+         
           <div className="burger" onClick={toggleMenu} aria-label="Toggle menu">
             <span className={`line ${isOpen ? 'open' : ''}`}></span>
             <span className={`line ${isOpen ? 'open' : ''}`}></span>
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Infinity Slider Section */}
+     
       <div className="infinity-slider">
         <div className="slider-content">
           <motion.div className="slide" whileHover={{ scale: 1.1 }}>
