@@ -39,7 +39,7 @@ import portfolio29 from '../assets/Screenshot 2024-10-30 184254.png';
 import portfolio30 from '../assets/Screenshot 2024-10-30 184523.png';
 import portfolio31 from '../assets/Screenshot 2024-10-30 184756.png';
 import portfolio32 from '../assets/banner.png';
-// Project data for different categories
+
 const projects = [
   
   {
@@ -315,11 +315,11 @@ const graphicDesignProjects = [
   }
 ];
 
-// Main Projects Component
+
 const Projects = () => {
   return (
     <section className="projects-section">
-      {/* Web Projects Section */}
+      
       <h1 className="section-title">Our Web Projects</h1>
       <div className="projects-grid">
         {projects.map((project, index) => (
@@ -346,7 +346,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Portfolios Section */}
+     
       <h1 className="section-title">Portfolios We Build</h1>
       <div className="projects-grid">
         {portfolios.map((portfolio, index) => (
@@ -373,7 +373,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Video Editing Projects Section */}
+     
       <h1 className="section-title">Video Editing Projects</h1>
       <div className="projects-grid">
         {videoEditingProjects.map((videoProject, index) => (
@@ -405,7 +405,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Graphic Design Projects Section */}
+      
       <h1 className="section-title">Graphic Design Projects</h1>
       <div className="projects-grid">
         {graphicDesignProjects.map((graphicProject, index) => (
