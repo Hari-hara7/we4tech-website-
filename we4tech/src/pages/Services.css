@@ -1,4 +1,4 @@
-/* Services Container */
+
 .services-container {
   padding: 60px 20px;
   background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
@@ -8,17 +8,17 @@
   overflow: hidden;
 }
 
-/* Services Title */
+
 .services-title {
   font-size: 3rem;
   margin-bottom: 40px;
   font-weight: bold;
   position: relative;
   z-index: 1;
-  color: #f7d200; /* Yellow Title Color */
+  color: #f7d200; 
 }
 
-/* Services Grid Layout */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -26,26 +26,26 @@
   z-index: 1;
 }
 
-/* Service Card with Black Background and Yellow Border Animation */
+
 .service-card {
-  background-color: #1c1c1c; /* Dark background for cards */
+  background-color: #1c1c1c;
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-  border: 2px solid transparent; /* Transparent border initially */
+  border: 2px solid transparent; 
 }
 
-/* Animated Yellow Border */
+
 .service-card::before,
 .service-card::after {
   content: '';
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #f7d200; /* Bright yellow line */
+  background-color: #f7d200; 
   transition: width 0.4s ease;
 }
 
@@ -61,46 +61,45 @@
 
 .service-card:hover::before,
 .service-card:hover::after {
-  width: 100%; /* Line animates across the top and bottom */
-}
+  width: 100%; 
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(247, 210, 0, 0.4); /* Yellow glow effect */
-  border-color: #f7d200; /* Yellow border on hover */
-  background-color: #2b2b2b; /* Slightly lighter shade of black on hover */
+  box-shadow: 0 6px 20px rgba(247, 210, 0, 0.4); 
+  border-color: #f7d200; 
+  background-color: #2b2b2b; 
 }
 
-/* Icon with Enhanced Hover Effect */
+
 .icon {
   font-size: 3rem;
-  color: #f7d200; /* Yellow color for icons */
+  color: #f7d200; 
   margin-bottom: 20px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon:hover {
-  transform: scale(1.2); /* Enlarge icon on hover */
-  color: #fff; /* Change icon color to white on hover */
+  transform: scale(1.2); 
+  color: #fff; 
 }
 
-/* Service Title */
+
 .service-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #f7d200; /* Yellow service title */
+  color: #f7d200; 
 }
 
-/* Service Description */
+
 .service-description {
   font-size: 1rem;
-  color: #bbb; /* Light gray for better readability on black */
-  line-height: 1.6; /* Improve readability */
+  color: #bbb; 
+  line-height: 1.6; 
 }
 
-/* CTA Container */
+
 .cta-container {
   margin-top: 60px;
   padding: 40px;
@@ -111,7 +110,7 @@
   overflow: hidden;
 }
 
-/* Dark Overlay for CTA */
+
 .cta-container::before {
   content: '';
   position: absolute;
@@ -119,15 +118,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.7); 
   z-index: -1;
   border-radius: 10px;
 }
 
-/* CTA Button */
+
 .cta-button {
-  background-color: #f7d200; /* Bright yellow button */
-  color: #000; /* Dark text on yellow */
+  background-color: #f7d200; 
+  color: #000; 
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
@@ -137,26 +136,26 @@
 }
 
 .cta-button:hover {
-  background-color: #ffe135; /* Lighter yellow on hover */
-  transform: scale(1.05); /* Enlarge on hover */
-  box-shadow: 0 6px 15px rgba(247, 210, 0, 0.4); /* Yellow glow effect */
+  background-color: #ffe135; 
+  transform: scale(1.05); 
+  box-shadow: 0 6px 15px rgba(247, 210, 0, 0.4); 
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .services-title {
-      font-size: 2.5rem; /* Adjust title size for smaller screens */
+      font-size: 2.5rem; 
   }
 
   .service-card {
-      padding: 20px; /* Less padding on smaller screens */
+      padding: 20px; 
   }
 
   .cta-button {
-      font-size: 1rem; /* Smaller button text on mobile */
+      font-size: 1rem;
   }
 
   .icon {
-      font-size: 2.5rem; /* Smaller icons on mobile */
+      font-size: 2.5rem; 
   }
 }
