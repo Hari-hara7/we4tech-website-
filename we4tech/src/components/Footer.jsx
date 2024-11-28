@@ -9,13 +9,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* About Section */}
+       
         <div className="footer-section about">
           <h2>We4Tech Agency</h2>
           <p>We provide top-notch web development with PWA and SEO, graphic design, video editing, and UI/UX design services. Helping businesses grow with modern digital solutions.</p>
         </div>
 
-        {/* Quick Links */}
+
         <div className="footer-section quick-links">
           <h3>Quick Links</h3>
           <ul>
@@ -27,7 +27,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Newsletter */}
+        
         <div className="footer-section newsletter">
           <h3>Join Our Newsletter</h3>
           <p>Stay updated with the latest news and special offers from We4Tech Agency.</p>
@@ -37,7 +37,7 @@ const Footer = () => {
           </form>
         </div>
 
-        {/* Social Media Links */}
+       
         <div className="footer-section social">
           <h3>Follow Us</h3>
           <div className="social-icons">
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom Section */}
+      
       <div className="footer-bottom">
         <p>&copy; 2024 We4Tech Agency. All Rights Reserved.</p>
         <div className="footer-links">
