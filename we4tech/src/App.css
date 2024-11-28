@@ -18,7 +18,7 @@
 
 .team-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ensure a minimum size for cards */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   gap: 20px;
 }
 
@@ -105,53 +105,53 @@
   font-weight: bold;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
   .about-title {
-    font-size: 2em; /* Smaller title on mobile */
+    font-size: 2em; 
   }
 
   .about-description {
-    font-size: 1em; /* Smaller text on mobile */
+    font-size: 1em; 
   }
 
   .team-container {
-    grid-template-columns: 1fr; /* Stack team cards vertically on smaller screens */
+    grid-template-columns: 1fr; 
   }
 
   .team-card {
-    margin: 10px 0; /* Add vertical margin between cards */
+    margin: 10px 0; 
   }
 
   .tech-stack-title {
-    font-size: 1.5em; /* Smaller tech stack title */
+    font-size: 1.5em; 
   }
 
   .tech-card {
-    margin: 10px; /* Reduce margin for tech cards */
-    flex: 1 1 100%; /* Allow tech cards to stack vertically */
+    margin: 10px; 
+    flex: 1 1 100%; 
   }
 }
 
 @media (max-width: 480px) {
   .about-title {
-    font-size: 1.8em; /* Even smaller title on very small screens */
+    font-size: 1.8em; 
   }
 
   .about-description {
-    font-size: 0.9em; /* Further reduce description font size */
+    font-size: 0.9em; 
   }
 
   .social-icon {
-    font-size: 1.2em; /* Reduce icon size */
+    font-size: 1.2em;
   }
 
   .github-button {
-    padding: 8px 12px; /* Smaller button */
+    padding: 8px 12px; 
   }
 
   .tech-icon {
-    font-size: 1.5em; /* Smaller tech icons */
+    font-size: 1.5em; 
   }
 }
 
@@ -164,8 +164,8 @@
 
 .tech-stack-container {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to the next line */
-  justify-content: center; /* Center align cards */
+  flex-wrap: wrap; 
+  justify-content: center; 
 }
 
 .tech-card {
@@ -178,7 +178,7 @@
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s;
-  flex: 1 1 200px; /* Allow cards to grow and shrink */
+  flex: 1 1 200px; 
 }
 
 .tech-card:hover {
@@ -194,31 +194,31 @@
   font-weight: bold;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
   .tech-stack-container {
-    flex-direction: column; /* Stack tech cards vertically */
-    align-items: center; /* Center align cards */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .tech-card {
-    margin: 10px 0; /* Add vertical margin between cards */
-    flex: 1 1 auto; /* Allow cards to adjust based on content */
-    width: 90%; /* Make tech cards take most of the width */
+    margin: 10px 0; 
+    flex: 1 1 auto; 
+    width: 90%; 
   }
 }
 
 @media (max-width: 480px) {
   .tech-stack-title {
-    font-size: 1.5em; /* Smaller tech stack title */
+    font-size: 1.5em;
   }
 
   .tech-card {
-    margin: 10px 0; /* Maintain vertical spacing */
-    width: 95%; /* Allow for a bit more width on very small screens */
+    margin: 10px 0; 
+    width: 95%; 
   }
 
   .tech-icon {
-    font-size: 1.5em; /* Smaller tech icons */
+    font-size: 1.5em; 
   }
 }
