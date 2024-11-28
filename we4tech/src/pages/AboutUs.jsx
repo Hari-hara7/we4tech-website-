@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './AboutUs.css'; // Importing styles
+import './AboutUs.css'; 
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { SiSocketdotio,SiVite, SiReact, SiTailwindcss, SiBootstrap, SiBulma, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiFirebase, SiTensorflow, SiPython, SiPytorch, SiScikitlearn, SiKeras } from 'react-icons/si';
 import HARI from '../assets/hari.jpeg';
@@ -34,7 +34,7 @@ const teamMembers = [
     description: 'Specializes in integrating machine learning models into real-world applications, with a focus on seamless deployment and scalability.',
     github: 'https://github.com/Gunateja653',
     linkedin: 'https://www.linkedin.com/in/guna-teja-sarvan-patnaik-0942a2275/',
-    photo: Teja, // Replace with actual path
+    photo: Teja, 
   },
   {
     name: 'Aaran',
@@ -42,7 +42,7 @@ const teamMembers = [
     description: 'Passionate about building seamless web experiences and engaging user interfaces.',
     github: 'https://github.com/Araan-Sheikh',
     linkedin: 'https://www.linkedin.com/in/araan-sheikh-523715327?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAFKCeasB33_ThhQp27XhiLc9eZN5sDS9bjU&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bk2p2qqNkRJS9QOe%2Faiwvgw%3D%3D',
-    photo: Aaran, // Replace with actual path
+    photo: Aaran,
   },
   {
     name: 'Vedant',
@@ -50,7 +50,7 @@ const teamMembers = [
     description: 'Creative mind behind visual designs and branding strategies.',
     github: 'https://github.com/Vedant10Mahalle',
     linkedin: 'https://www.linkedin.com/in/vedant-mahalle-b217b4290/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BZSINcN5rS3i%2FB8FFRpsrtw%3D%3D',
-    photo: vedanth, // Replace with actual path
+    photo: vedanth,
   },
   {
     name: 'Devdat',
@@ -58,14 +58,14 @@ const teamMembers = [
     description: 'Creative mind behind visual designs and branding strategies.',
     github: 'https://github.com/devdat2021',
     linkedin: 'https://www.linkedin.com/in/devdat-p-b59415327/',
-    photo: Devdat, // Replace with actual path
+    photo: Devdat, 
   },
   {
     name: 'Manohar',
     role: 'Video Editor',
     description: 'Skilled in crafting engaging video content and post-production editing.',
     instagram: 'https://www.instagram.com/manoharnaik09/', // Instagram link added
-    photo: Manohar, // Replace with actual path
+    photo: Manohar,
   },
 ];
 
@@ -81,11 +81,11 @@ const techStack = [
   { name: 'JavaScript', icon: <SiJavascript /> },
   { name: 'Node.js', icon: <SiNodedotjs /> },
   { name: 'Firebase', icon: <SiFirebase /> },
-  { name: 'TensorFlow', icon: <SiTensorflow /> }, // Added TensorFlow
-  { name: 'Python', icon: <SiPython /> }, // Added Python
-  { name: 'PyTorch', icon: <SiPytorch /> }, // Added PyTorch
-  { name: 'scikit-learn', icon: <SiScikitlearn /> }, // Added scikit-learn
-  { name: 'Keras', icon: <SiKeras /> }, // Added Keras
+  { name: 'TensorFlow', icon: <SiTensorflow /> }, 
+  { name: 'Python', icon: <SiPython /> }, 
+  { name: 'PyTorch', icon: <SiPytorch /> }, 
+  { name: 'scikit-learn', icon: <SiScikitlearn /> }, 
+  { name: 'Keras', icon: <SiKeras /> }, 
 ];
 
 const AboutUs = () => {
@@ -121,10 +121,10 @@ const AboutUs = () => {
               <FaInstagram />
             </a>
           )}
-          {/* Add portfolio button */}
+        
           {member.portfolio && (
             <a href={member.portfolio} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Portfolio">
-              <SiVite /> {/* Or use any other icon that suits the portfolio button */}
+              <SiVite /> 
             </a>
           )}
         </div>
