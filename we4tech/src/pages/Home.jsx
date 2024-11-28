@@ -2,17 +2,17 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaRocket, FaMobileAlt, FaPaintBrush, FaVideo, FaCheck, FaBrain } from 'react-icons/fa';
 import { useEffect } from 'react';
-import './Home.css'; // Importing styles
+import './Home.css'; 
 
 const Home = () => {
   useEffect(() => {
-    // Tidio script
+   
     const tidioScript = document.createElement('script');
     tidioScript.src = "//code.tidio.co/qnqhv178gomielhckx7xnojtikcpyjbk.js";
     tidioScript.async = true;
     document.body.appendChild(tidioScript);
 
-    // Google Analytics script
+    
     const gaScript = document.createElement('script');
     gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-BPM4F8NM9M";
     gaScript.async = true;
@@ -27,7 +27,7 @@ const Home = () => {
       gtag('config', 'G-BPM4F8NM9M');
     };
 
-    // Clean up scripts on component unmount
+   
     return () => {
       document.body.removeChild(tidioScript);
       document.body.removeChild(gaScript);
@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* Hero Section */}
+     
       <section className="hero-section">
         <div className="hero-content">
           <motion.h1 
@@ -64,7 +64,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+
       <section className="services-section parallax">
         <motion.h2 
           initial={{ opacity: 0 }} 
@@ -121,7 +121,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+     
       <section className="why-choose-us-section">
         <motion.h2
           initial={{ opacity: 0, y: 50 }} 
@@ -166,7 +166,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Parallax Background Section */}
+      
       <section className="parallax-section">
         <div className="parallax-content">
           <h2>We Drive Innovation in Every Project</h2>
@@ -174,7 +174,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
+      
       <section className="cta-section">
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }} 
