@@ -1,6 +1,6 @@
 
-import './Footer.css'; // Importing styles
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; // Importing icons
+import './Footer.css'; 
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
