@@ -17,7 +17,7 @@ const teamMembers = [
     description: 'Passionate about creating dynamic web applications and learning new technologies. Experienced in both frontend and backend development, specializing in building user-friendly and scalable solutions.',
     github: 'https://github.com/Hari-hara7',
     linkedin: 'https://www.linkedin.com/in/hari-hara-nath-a13583282/',
-    portfolio: 'https://hariharanath.is-cod.in/', // New portfolio link
+    portfolio: 'https://hariharanath.is-cod.in/',
     photo: HARI,
   },
   {
@@ -26,7 +26,7 @@ const teamMembers = [
     description: 'Experienced in server-side logic and database management for robust applications.',
     github: 'https://github.com/anandbobba',
     linkedin: 'https://www.linkedin.com/in/anandbobba/',
-    photo: Anand, // Replace with actual path
+    photo: Anand, 
   },
   {
     name: 'Teja',
