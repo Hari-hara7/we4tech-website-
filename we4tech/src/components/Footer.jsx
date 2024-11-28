@@ -12,7 +12,7 @@ const Footer = () => {
        
         <div className="footer-section about">
           <h2>We4Tech Agency</h2>
-          <p>We provide top-notch web development with PWA and SEO, graphic design, video editing, and UI/UX design services. Helping businesses grow with modern digital solutions.</p>
+          <p>We provide top-notch web development with PWA and SEO, graphic design, video editing services. Helping businesses grow with modern digital solutions.</p>
         </div>
 
 
