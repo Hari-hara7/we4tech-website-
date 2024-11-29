@@ -254,7 +254,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 50px;
-  animation: slide 40s linear infinite;
+  animation: slide 30s linear infinite;
   font-size: 1.1rem;
 }
 
@@ -293,7 +293,8 @@
 
 @media (max-width: 768px) {
   .infinity-slider .slider-content {
-    animation-duration: 20s; 
+   
+    animation: slide 5s linear infinite;
     gap: 20px; 
   }
 
@@ -301,4 +302,5 @@
     font-size: 0.85rem;
   }
 }
+
 }
