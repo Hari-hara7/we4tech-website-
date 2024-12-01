@@ -32,7 +32,7 @@ Ensure you have **Node.js** and **npm** installed.
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone "https://github.com/Hari-hara7/we4tech-website-.git"
    cd we4tech-agency
 npm install
 npm start
